@@ -1,0 +1,31 @@
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  /* display: block; */
+  width: max-content;
+  padding: 10px 10px;
+  /* z-index: 2; */
+  /* ini index buat apaaa? krn tyda terjadi apa apa gaizu */
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 25px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  /* ini bikin navbarnya hilang gais, knp ya  SOLVED TERNYATA GA ILANG!! AJSKA*/
+}
+
+nav a {
+  color: var(--color-light);
+  background: transparent;
+  display: flex;
+  font-size: 18px; /* ini buat gedenyya icon, jd icon itu lebih ke text jdnya */
+  padding: 5px 8px;
+}
+
+nav a :hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  color: var(--color-secondary);
+}

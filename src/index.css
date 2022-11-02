@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #1c1f3a;
+  --color-primary: #4db5ff;
+  --color-primary-variant: #0d294c;
+  --color-secondary: #2f3953;
+  --color-white: white;
+  --color-light: #dcdde2;
+
+  --transition: all 400ms ease;
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-white);
+  background-image: url(../src/assets/engin-akyurt-Hlkuojv_P6I-unsplash-2.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  background-color: var(--color-bg);
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 400;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  /* background-color: var(--color-white); */
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.me {
+  align-items: center;
+  margin-left: 150px;
+  margin-top: 50px;
+  /* background: var(--color-primary); */
+}
+
+section {
+  margin-top: 100px;
+  height: 100vh;
+}
